@@ -7,6 +7,7 @@ load_dotenv()
 
 # --- API Keys ---
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "") or os.getenv("OPENAI_API_BASE", "")
 HF_TOKEN = os.getenv("HF_TOKEN", "")  # Optional: for HuggingFace models
 
 # --- Qdrant (same as Day 18) ---
@@ -47,6 +48,7 @@ PAIR_QUESTION_IDS = (1, 5, 12, 21, 41)
 # --- LLM Judge ---
 GENERATION_MODEL = "gpt-4o-mini"
 JUDGE_MODEL = "gpt-4o-mini"
+EVALUATOR_MODEL = "gpt-4o-mini"
 
 # --- Guardrail latency budget ---
 LATENCY_BUDGET_P95_MS = 500  # Full guard target; Task 12 currently measures input guards only.
