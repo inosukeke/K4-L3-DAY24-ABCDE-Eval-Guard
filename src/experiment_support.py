@@ -8,7 +8,7 @@ import math
 from datetime import datetime, timezone
 from pathlib import Path
 
-from config import JUDGE_MODEL, LATENCY_BUDGET_P95_MS
+from config import JUDGE_MODEL, LATENCY_BUDGET_P95_MS, OPENAI_API_KEY, OPENAI_BASE_URL
 
 
 def read_json(path):
@@ -31,6 +31,15 @@ def model_ids(values, name):
             for value in values):
         raise ValueError(f"{name}: expected a list of non-blank model identifiers.")
     return sorted(set(values))
+
+
+def make_openai_client():
+    """Build an OpenAI client honoring OPENAI_BASE_URL for OpenAI-compatible proxies."""
+    from openai import OpenAI
+    kwargs = {"api_key": OPENAI_API_KEY or None}
+    if OPENAI_BASE_URL:
+        kwargs["base_url"] = OPENAI_BASE_URL
+    return OpenAI(**kwargs)
 
 
 def generation_models(answers):
@@ -108,8 +117,7 @@ Trả JSON: {"label": 0 hoặc 1, "reasoning": "giải thích ngắn theo tiêu 
 def judge_binary(question, answer, reference, *, client=None):
     """Provided bridge to 0/1 calibration. Never accepts human_label/human_note."""
     if client is None:
-        from openai import OpenAI
-        client = OpenAI()
+        client = make_openai_client()
     response = client.chat.completions.create(
         model=JUDGE_MODEL, temperature=0,
         response_format={"type": "json_object"},
