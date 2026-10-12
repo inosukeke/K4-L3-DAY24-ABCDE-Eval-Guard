@@ -1,10 +1,10 @@
 # Phan tich loi Phase A
 
-Nhom: K4 Track 3A Eval-Guard
+Nhom: ABCDE
 
-Nguoi phu trach: Truong nhom
+Nguoi phu trach: Bui Gia Chinh - 2A202602693
 
-Nguon: `artifacts/ragas_50q.json`; run timestamp: 2026-10-12T07:33:20.031022+00:00.
+Nguon: `artifacts/ragas_50q.json`; run timestamp: 2026-10-12T14:26:21.685165+00:00.
 Generation mode: hon hop llm (Groq `qwen/qwen3.8-27b`) va extractive_fallback khi Groq rate-limit. Models generation: ['qwen/qwen3.8-27b']; evaluator: ['BAAI/bge-m3', 'qwen/qwen3.8-27b'].
 
 ## Diem theo distribution

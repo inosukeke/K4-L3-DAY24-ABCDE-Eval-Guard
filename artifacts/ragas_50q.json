@@ -805,24 +805,24 @@
   "per_distribution": {
     "factual": {
       "count": 20,
-      "faithfulness": 0.87080735,
-      "answer_relevancy": 0.5418866999999999,
+      "faithfulness": 0.8708073500000001,
+      "answer_relevancy": 0.5418867,
       "context_precision": 0.9333332999999999,
       "context_recall": 1.0,
-      "avg_score": 0.8365068375
+      "avg_score": 0.8365068374999998
     },
     "multi_hop": {
       "count": 20,
       "faithfulness": 0.48646165,
-      "answer_relevancy": 0.27239654999999996,
+      "answer_relevancy": 0.27239655,
       "context_precision": 0.84999995,
       "context_recall": 0.98333335,
-      "avg_score": 0.6480478749999999
+      "avg_score": 0.648047875
     },
     "adversarial": {
       "count": 10,
       "faithfulness": 0.6962458,
-      "answer_relevancy": 0.1958252,
+      "answer_relevancy": 0.19582520000000003,
       "context_precision": 0.9,
       "context_recall": 0.9666667,
       "avg_score": 0.689684425
@@ -852,8 +852,8 @@
       }
     },
     "distribution_avg_scores": {
-      "factual": 0.8365068375,
-      "multi_hop": 0.6480478749999999,
+      "factual": 0.8365068374999998,
+      "multi_hop": 0.648047875,
       "adversarial": 0.689684425
     },
     "dominant_failure_distribution": "multi_hop",
@@ -976,10 +976,10 @@
       "judge": [],
       "guard": []
     },
-    "created_at": "2026-10-12T07:33:20.031022+00:00",
+    "created_at": "2026-10-12T14:26:21.685165+00:00",
     "source_sha256": {
-      "answers_50q.json": "16d072a1bbda1848e4360a1091507e4eff62594acc87c7d76c682ca3d6631d63",
-      "test_set_50q.json": "0e87f26e020a32c62ea0864940720618f39600b9d3378193704cf2f86e88446d"
+      "answers_50q.json": "09b0cf3a35e5a72228065494a02a9e8616d9aee1fc3dddc6f0f3cd8291065575",
+      "test_set_50q.json": "3ad288426e3066e561737b35b66b671e6c411697dffd0d1161cc7b801e5954cc"
     }
   }
 }
