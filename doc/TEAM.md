@@ -8,7 +8,7 @@ Trưởng nhóm/người nộp: Nguyễn Đình Khang — 2A202602584.
 
 Ngày lab/deadline áp dụng: 12/10/2026, 23:59 — Asia/Ho_Chi_Minh (UTC+07:00), theo deadline mặc định và các cập nhật của coach nếu có.
 
-Commit dùng để chấm: chưa tạo tại thời điểm điền tài liệu. Trước khi nộp, trưởng nhóm sẽ commit toàn bộ thay đổi đã kiểm tra, thay dòng này bằng SHA commit cuối và gửi đúng SHA đó cho coach.
+Commit dùng để chấm: `67568979b0b30153589bed831dc27d1518861e51` — `feat: complete phase c guardrails and finalize submission evidence`.
 
 ## Thành viên và phân công
 
