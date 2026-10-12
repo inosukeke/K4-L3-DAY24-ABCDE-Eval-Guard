@@ -47,7 +47,7 @@ PAIR_QUESTION_IDS = (1, 5, 12, 21, 41)
 
 # --- LLM Judge ---
 GENERATION_MODEL = "qwen/qwen3.8-27b"
-JUDGE_MODEL = "qwen/qwen3.8-27b"
+JUDGE_MODEL = "gpt-4o-mini"
 EVALUATOR_MODEL = "qwen/qwen3.8-27b"
 
 # --- Guardrail latency budget ---
